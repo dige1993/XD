@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Title Scroll</title>
+<style>
+.showTime {
+	background-color: #000;
+	color: #FFF;
+	width: 340px;
+	height: 30px;
+	line-height: 30px;
+	font-family: 楷体;
+	overflow: hidden;
+	opacity: 0.7
+}
+#s1 {
+	position: relative;
+	left: -295px;
+}
+</style>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	bg_music_title_scroll();
+	
+	function bg_music_title_scroll()
+	{
+		$("#s1").animate({
+			left:"+=635px"
+		},10000,function(){
+			$("#s1").css("left","-295px");
+		});
+		setTimeout(bg_music_title_scroll,10000);
+	}
+});
+</script>
+</head>
+
+<body>
+<div class="showTime"><span id="s1">Background Music - Shining Friends...</span></div>
+</body>
+</html>

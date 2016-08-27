@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Love Dian</title>
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/secret.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div id="love_dian"><img src="images/love_dian.png" draggable="false" /></div>
+    <!-- 显示时间 -->
+    <div id="memories"><a href="album.html" style="color:#3CC">[去年今日]</a></div><div id="time_area"></div>
+    <!-- 清除浮动 -->
+    <div class="clear"></div>
+    <!-- 双横线 -->
+	<hr style="margin-top:0px;" /><hr />
+    <!-- 音乐区域 -->
+    <div id="music_area">
+    	<!-- 背景音乐 -->
+        <audio id="myaudio"  autoplay="autoplay" loop>
+        	您的浏览器不支持此音乐控件...
+        	<source src="media/Shining Friends.mp3" type="audio/mpeg" />
+        </audio>
+        <!-- 背景音乐名称 -->
+        <div class="showTime"><span id="s1">Background Music - Shining Friends...</span></div>
+        <!-- 背景音乐歌词 -->
+        <div id="lyrics">
+            <div class="lrc_line"></div>
+            <div class="lrc_line">Shining Friends</div>
+            <div class="lrc_line">作词 : Anders Lee 作曲:陈光荣</div>
+            <div class="lrc_line">演唱：冯曦妤</div>
+            <div class="lrc_line">A little faith Brightens a rainy day</div>
+            <div class="lrc_line"></div>
+            <div class="lrc_line">Life is difficult you can't go away</div>
+            <div class="lrc_line">Don't hide yourselve in the corner</div>
+            <div class="lrc_line">You have my place to stay</div>
+            <div class="lrc_line"></div>
+            <div class="lrc_line">Sorrow is gonna say goodbye</div>
+            <div class="lrc_line">Opens up You'll see the happy sunshine</div>
+            <div class="lrc_line"></div>
+            <div class="lrc_line">Keep going on with your dream</div>
+            <div class="lrc_line">Chasing tomorrow's sunrise</div>
+            <div class="lrc_line">The spirit can never die</div>
+            <div class="lrc_line">Sun will shine, my friend</div>
+            <div class="lrc_line">Won't let you cry, my dear</div>
+            <div class="lrc_line"></div>
+            <div class="lrc_line">Seeing you shed a tear</div>
+            <div class="lrc_line">Make my world disappear</div>
+            <div class="lrc_line">You'll never be alone in darkness</div>
+            <div class="lrc_line">See my smile, my friend</div>
+            <div class="lrc_line">We are with you, holding hands</div>
+            <div class="lrc_line">you have got to believe</div>
+            <div class="lrc_line">you are my destiny</div>
+            <div class="lrc_line">We're meant to be your friends</div>
+            <div class="lrc_line">That's what a friendship be</div>
+            <div class="lrc_line"></div>
+        </div>
+    </div>
+    
+    <div id="flash_area">
+    	<div class="showTime">&nbsp;我的作品<span class="span_more"><a href="poem.html">more+</a>&nbsp;</span></div>
+        <object type="application/x-shockwave-flash" data="media/1.swf" width="650" height="420" title="此影片不受chrome浏览器支持，请使用IE或Firefox或国产浏览器查看。">
+        <param name="movie" value="media/1.swf" />
+        </object>
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div id="myPhotos">
+    	<div class="showTime">&nbsp;我型我秀<span class="span_more"><a href="personal_info.html">more+</a>&nbsp;</span></div>
+        <div class="photo" id="p1"><a href="http://image.baidu.com/i?tn=baiduimage&ipn=r&ct=201326592&cl=2&lm=-1&st=-1&fm=index&fr=&sf=1&fmq=&pv=&ic=0&nc=1&z=&se=1&showtab=0&fb=0&width=&height=&face=0&istype=2&ie=utf-8&word=%E6%98%9F%E7%A9%BA" title="星空"><img src="images/myPhotos/photo_1.jpg" width="330" height="190" draggable="false"></a></div>
+        <div class="photo" id="p2"><a href="http://image.baidu.com/i?tn=baiduimage&ipn=r&ct=201326592&cl=2&lm=-1&st=-1&fm=index&fr=&sf=1&fmq=&pv=&ic=0&nc=1&z=&se=1&showtab=0&fb=0&width=&height=&face=0&istype=2&ie=utf-8&word=%E8%90%8C%E8%8A%BD" title="萌芽"><img src="images/myPhotos/photo_2.jpg" width="322" height="190" draggable="false"></a></div>
+        <div class="photo" id="p3"><a href="http://image.baidu.com/i?tn=baiduimage&ipn=r&ct=201326592&cl=2&lm=-1&st=-1&fm=index&fr=&sf=1&fmq=&pv=&ic=0&nc=1&z=&se=1&showtab=0&fb=0&width=&height=&face=0&istype=2&ie=utf-8&word=%E6%A1%82%E6%9E%97" title="桂林"><img src="images/myPhotos/photo_3.jpg" width="330" height="190" draggable="false"></a></div>
+    </div>
+</div>
+<hr style="width:1000px; margin:5px auto;" />
+<div id="copy">CopyRight&copy;2014&nbsp;&nbsp;谢典&nbsp;&nbsp;版权所有<br />联系我:<a href="http://user.qzone.qq.com/529826870/main" style="color:#3CC">529826870.qzone.com</a>&nbsp;&nbsp;<a href="notes.html" style="color:#3CC">给我留言</a></div>
+</body>
+</html>

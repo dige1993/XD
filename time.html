@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Time</title>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	init_time();
+	
+	function init_time()
+	{
+		var now_time = new Date();
+		var year = now_time.getFullYear();
+		var month = now_time.getMonth();
+		var date = now_time.getDate();
+		var hour = now_time.getHours();
+		var minute = now_time.getMinutes();
+		var second = now_time.getSeconds();
+		var day = now_time.getDay();
+		var day_text = "";
+		switch(day)
+		{
+			case 0: day_text = "日";break;
+			case 1: day_text = "一";break;
+			case 2: day_text = "二";break;
+			case 3: day_text = "三";break;
+			case 4: day_text = "四";break;
+			case 5: day_text = "五";break;
+			case 6: day_text = "六";
+		}
+		var time_text = year + "年" + (month + 1) + "月" + date + "日  " + hour + ":" + minute + ":" + second + "  星期" + day_text;
+		$("#time_area").text(time_text);
+		setTimeout(init_time, 1000);
+	}
+});
+</script>
+</head>
+
+<body>
+<div id="time_area"></div>
+</body>
+</html>

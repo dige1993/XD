@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+body {background-image:url(../images/bg_unit_1.jpg); cursor:url(cursor/Handwriting.cur), auto;}
+a:hover {cursor:url(cursor/Handwriting.cur), auto;}
+.container {border:solid 1px #333; width:1000px; height:820px; overflow:hidden; margin:3px auto;}
+#love_dian {float:left;}
+#time_area {color:#FFF; float:right; margin-top:90px; margin-right:20px;}
+#memories {color:#FFF; float:right; margin-top:90px; margin-right:20px;}
+.clear {clear:both;}
+#music_area {width:340px; height:450px; border:solid #999 1px; float:left;}
+#music_area audio {width:100%; height:30px; color:#FFF;}
+.showTime {background-color:#FFF; width:100%; height:30px; line-height:30px; font-family:楷体; overflow:hidden; opacity:0.7}
+#s1 {position:relative; left:-295px;}
+#lyrics {width:100%; height:400px; overflow:hidden;}
+.lrc_line {color:#0FF; width:100%; height:20px; text-align:center; position:relative;}
+#flash_area {width:650px; height:450px; border:solid #999 1px; float:right;}
+#myPhotos {width:998px; height:222px; border:solid #999 1px; float:left; margin-top:8px;}
+#copy {text-align:center; color:#FFF; font-family:楷体; margin-bottom:20px; font-size:14px;}
+#p1 {float:left;}
+#p2 {float:left; margin-left:8px;}
+#p3 {float:right;}
+.span_more {float:right;}
+#new_notes {width:700px; height:110px; margin:10px auto; border:solid #999 1px;}
+#new_notes textarea {width:694px; height:80px; resize:none;}
+#words_num {color:#FFF; float:right;}
+#notes {width:100%; height:510px; overflow:scroll;}
+.note {color:#FFF;}
+#album {width:700px; height:500px; border:solid #999 1px; margin-top:10px; margin-left:auto ;margin-right:auto;}
+#album_left {width:30px; height:470px; background-color:#000; line-height:470px; opacity:0.9; text-align:center; float:left;}
+#album_right {width:30px; height:470px; background-color:#000; line-height:470px; opacity:0.6; text-align:center; float:right;}
+#album_photo {width:640px; height:470px; background-color:#666; float:left; overflow:hidden;}
+#photo_number {width:700px; height:30px; margin:0 auto; color:#FFF; text-align:center;}
+
+
+
+
+

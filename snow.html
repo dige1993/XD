@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SNOW</title>
+<style>
+body {
+	background-color: #000;
+}
+</style>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	snow();
+	
+	function snow()
+	{
+		//获取屏幕宽度
+		var screen_width = parseInt(window.screen.availWidth); 
+		//每次产生不超过16片雪花
+		var snow_number = Math.round(Math.random()*15 + 1);
+		for(var i = 0; i < snow_number; i++)
+		{
+			//产生1~4之间的随机数，表示每次从4种不同大小的雪花图片中选一种
+			var snow_id = Math.round(Math.random()*3 + 1); 
+			//雪花刚产生时的横坐标，是30到屏幕宽度-70之间的随机数
+			var x_snow = Math.round(Math.random()* (screen_width - 100) + 30); 
+			//雪花刚产生时的纵坐标绝对值，是0到200之间的随机数
+			var y_snow = Math.round(Math.random()* 200); 
+			//新建IMG元素img_snow
+			var img_snow = document.createElement("IMG");
+			//设置雪花元素的图片
+			img_snow.src = "images/snow/" + snow_id + ".png"; 
+			//给雪花元素添加class属性，值为snow
+			img_snow.className = "snow";
+			//设置雪花元素d的position属性为absolute，这个才可以使用坐标定位
+			img_snow.style.position = "absolute";
+			//设置横坐标，为前面产生的随机数x_snow
+			img_snow.style.left = x_snow + "px";
+			//设置纵坐标，为前面产生的随机数y_snow
+			img_snow.style.top = "-" + y_snow + "px";
+			//设置层级别，高一点，保证雪花图像不被其它元素遮住
+			img_snow.style.zIndex = 10;
+			//设置雪花图像不可拖动
+			img_snow.draggable = false;
+			//向body元素添加雪花元素
+			$("body").append(img_snow);
+			
+			$("img.snow").animate({
+				top:'800px',
+				opacity:0
+			}, 10000, function(){
+				$(this).remove();
+			});
+		}
+		setTimeout(snow, 2000);
+	}
+});
+</script>
+</head>
+
+<body>
+</body>
+</html>
